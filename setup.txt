@@ -1,0 +1,4 @@
+#install mongoDB
+pip install Flask
+pip install Flask-MongoAlchemy
+pip install flask-restful
