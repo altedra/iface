@@ -15,7 +15,7 @@ api.add_resource(HelloWorld, '/')
 class ControlBaseOU(Resource):
     def get(self):
         r = BaseOU.query.first()
-        out = r if r is not None else 'No items found' 
+        out = r.name if r is not None else 'No items found' 
         return {'first': out}
 
 api.add_resource(ControlBaseOU, '/BaseOU')
